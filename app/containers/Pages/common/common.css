@@ -1,0 +1,32 @@
+#form-dialog-title:after {
+    content: "" !important; 
+    position: absolute !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: #EDE7F6 !important;
+    bottom: 0 !important;
+    left: 0px !important;
+}
+
+.icon-button{
+    color:"#A32CDE" !important
+}
+
+.action{
+    padding-bottom:24px !important;
+    padding-right:24px !important;
+}
+
+.mui-style-ltr-e2ty8i{
+    height:2px !important;
+}
+
+.darkTitleForHeader {
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    font-family: Google Sans, Helvetica Neue, sans-serif !important;
+    background: linear-gradient(90deg, rgb(162,43,221), rgb(103, 58, 183)) !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    letter-spacing: -1.5px !important;
+}
