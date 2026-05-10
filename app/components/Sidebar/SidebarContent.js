@@ -61,7 +61,7 @@ function SidebarContent(props) {
   return (
     <div className={cx(classes.drawerInner, !drawerPaper ? classes.drawerPaperClose : '')}>
       <div className={classes.drawerHeader} >
-        <NavLink to="/product-bank" className={cx(classes.brand, classes.brandBar, turnDarker && classes.darker)}>
+        <NavLink to="/" className={cx(classes.brand, classes.brandBar, turnDarker && classes.darker)}>
           <img src={textLogo} style={{width:"150px"}}/>
         </NavLink>
         {/* {isLogin && (

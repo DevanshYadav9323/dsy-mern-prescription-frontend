@@ -294,6 +294,10 @@ export const Login = loadable(() =>
   import('./Pages/Users/Login'), {
   fallback: <Loading />,
 });
+export const PatientLogin = loadable(() =>
+  import('./Pages/PatientLogin'), {
+  fallback: <Loading />,
+});
 export const LoginV2 = loadable(() =>
   import('./Pages/Users/LoginV2'), {
   fallback: <Loading />,

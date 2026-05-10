@@ -7,14 +7,16 @@ import {
   ResetPassword, LockScreen, ComingSoon,
   Maintenance,
   NotFound,
+  PatientLogin
 } from '../pageListAsync';
 
 function Auth() {
   return (
     <Outer>
       <Switch>
-        <Route path="/login" component={Login} />
+        <Route path="/doctor/login" component={Login} />
         <Route path="/login-v2" component={LoginV2} />
+        <Route path="/patient/login" component={PatientLogin} />
         <Route path="/login-v3" component={LoginV3} />
         <Route path="/register" component={Register} />
         <Route path="/register-v2" component={RegisterV2} />

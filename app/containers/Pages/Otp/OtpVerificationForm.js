@@ -41,7 +41,7 @@ function OtpVerificationForm(props) {
         toast(data.title)
     } else {
        localStorage.setItem('token',data.token)
-       history.push('/product-bank')
+       history.push('/')
     }
   }
 
@@ -52,9 +52,21 @@ function OtpVerificationForm(props) {
   return (
     <Paper className={cx(classes.paperWrap, deco && classes.petal)}>
       <div style={{display:'flex', justifyContent:'center'}}>
-        <NavLink to="/product-bank" className={classes.brand}>
+        <NavLink to="/" className={classes.brand}>
           <img src={img} alt={brand.name} style={{height:80 ,width:80}}/>
         </NavLink>
+        {/* <NavLink
+
+  to={
+    localStorage.getItem("role")
+      === "doctor"
+        ? "/dashboard"
+        : "/doctors"
+  }
+
+  className={classes.brand}
+
+></NavLink> */}
       </div>
       <Typography variant="h4" className={classes.title} gutterBottom>
         Verify Otp

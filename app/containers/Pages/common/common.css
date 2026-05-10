@@ -22,10 +22,11 @@
 }
 
 .darkTitleForHeader {
-    font-weight: 500 !important;
+    font-weight: 900 !important;
     text-transform: capitalize !important;
     font-family: Google Sans, Helvetica Neue, sans-serif !important;
-    background: linear-gradient(90deg, rgb(162,43,221), rgb(103, 58, 183)) !important;
+    /* background: linear-gradient(90deg, rgb(162,43,221), rgb(103, 58, 183)) !important; */
+    background: #0D1B7E !important;
     -webkit-background-clip: text !important;
     color: transparent !important;
     letter-spacing: -1.5px !important;

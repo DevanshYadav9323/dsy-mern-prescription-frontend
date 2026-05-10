@@ -14,7 +14,7 @@ const AuthProvider = ({ children })=>{
     const onLogout = async () => {
         localStorage.clear();
         sessionStorage.clear();
-        window.location.href ="/login"
+        window.location.href ="/doctor/login"
         // history?.push("/login");
     };
 
@@ -26,16 +26,30 @@ const AuthProvider = ({ children })=>{
             try {
                 const token = localStorage.getItem('token')
                 if (!token) {
-                   history.replace('/login')                    
+                   history.replace('/doctor/login')                    
                 } 
             } catch (e) {
                 onLogout();
             }
             setLoading(false);      
         };
-        if (window.location.pathname !=="/login") {
-            verifyToken()
-        }
+        // if (window.location.pathname !=="/login") {
+        //     verifyToken()
+        // }
+        const publicRoutes = [
+  "/doctor/login",
+  "/patient/login",
+  "/patient/signup",
+  "/doctor/signup",
+];
+
+if (
+  !publicRoutes.includes(
+    window.location.pathname
+  )
+) {
+  verifyToken();
+}
     },[history])
 
     const value = {

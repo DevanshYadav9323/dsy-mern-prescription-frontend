@@ -50,7 +50,7 @@ function VerifyOTP() {
         headers: { authorization: data.token }})
         localStorage.setItem("qr", response.data.shop.qrUrl)
         localStorage.setItem("shop_name", response.data.shop.shop_name)
-        history.push("/dashboard")
+        history.push("/redeems")
         toast("Successfully logged in")
       } else {
         toast(data.title);

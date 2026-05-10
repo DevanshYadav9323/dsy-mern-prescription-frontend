@@ -37,7 +37,13 @@ function MainMenu(props) {
   };
 
   const baseUrl = AppConfig.baseUrl
-  const token = localStorage.getItem("token")
+  const role =
+  localStorage.getItem("role");
+
+const token =
+  role === "doctor"
+    ? localStorage.getItem("doctorToken")
+    : localStorage.getItem("patientToken");
   const {
     openSubMenu,
     open,

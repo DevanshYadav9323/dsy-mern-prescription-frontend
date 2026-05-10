@@ -63,7 +63,7 @@ function CounterWidget(props) {
       <div>
         <Typography className={classes.counter}>
           {unitBefore}
-          <CountUp start={start} end={end} duration={duration} useEasing />
+          <CountUp start={start} end={end || 0} duration={duration} useEasing />
           {unitAfter}
         </Typography>
         <Typography className={classes.title} variant="subtitle1">{title}</Typography>

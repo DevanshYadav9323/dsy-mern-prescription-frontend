@@ -159,7 +159,7 @@ function CounterTrading(props) {
         </div>
         <Typography className={classes.counter}>
           {unitBefore}
-          <CountUp start={start} end={end} duration={duration} useEasing />
+          <CountUp start={start} end={end || 0} duration={duration} useEasing />
           {unitAfter}
         </Typography>
       </header>

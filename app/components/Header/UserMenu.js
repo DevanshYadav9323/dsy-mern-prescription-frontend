@@ -50,7 +50,7 @@ function UserMenu(props) {
   const handleLogOut = () => {
     localStorage.clear();
     sessionStorage.clear();
-    history.replace('/login')
+    history.replace('/doctor/login')
   }
 
   const handleChangePassword = () => {
@@ -156,17 +156,9 @@ function UserMenu(props) {
           src={dummy.user.avatar}
         />
       </Button>
-      <Menu
+      {/* <Menu
         id="menu-appbar"
         anchorEl={anchorEl}
-        // anchorOrigin={{
-        //   vertical: 'top',
-        //   horizontal: 'right',
-        // }}
-        // transformOrigin={{
-        //   vertical: 'top',
-        //   horizontal: 'right',
-        // }}
         open={openMenu === 'user-setting'}
         onClose={handleClose}
       >
@@ -178,7 +170,96 @@ function UserMenu(props) {
           </ListItemIcon>
           Log Out
         </MenuItem>
-      </Menu>
+      </Menu> */}
+
+      <Menu
+  id="menu-appbar"
+  anchorEl={anchorEl}
+  open={openMenu === 'user-setting'}
+  onClose={handleClose}
+>
+
+  <MenuItem
+    style={{ fontSize: 14 }}
+    onClick={() => {
+
+      const role =
+        localStorage.getItem(
+          "role"
+        );
+
+      if (role === "doctor") {
+
+        history.push(
+          "/doctor/profile"
+        );
+
+      }
+
+      else if (role === "patient") {
+
+        history.push(
+          "/patient/profile"
+        );
+
+      }
+      
+      //  else {
+
+      //   history.push(
+      //     "/patient/profile"
+      //   );
+
+      // }
+
+      handleClose();
+
+    }}
+  >
+
+    <ListItemIcon>
+
+      <i
+        className="fa-solid fa-user"
+        style={{
+          fontSize: 16
+        }}
+      />
+
+    </ListItemIcon>
+
+    Profile
+
+  </MenuItem>
+
+  <Divider />
+
+  <MenuItem
+
+    style={{
+      fontSize: 14,
+      color: "#d32f2f"
+    }}
+
+    onClick={handleLogOut}
+
+  >
+
+    <ListItemIcon>
+
+      <ExitToApp
+        style={{
+          color: "#d32f2f"
+        }}
+      />
+
+    </ListItemIcon>
+
+    Log Out
+
+  </MenuItem>
+
+</Menu>
     </div>
   );
 }

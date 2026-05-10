@@ -62,7 +62,36 @@ function LeftSidebarLayout(props) {
         <section className={cx(classes.mainWrap, classes.sidebarLayout)}>
           {titleException.indexOf(history.location.pathname) < 0 && (
             <div className={classes.pageTitle}>
-              <Typography component="h4" className={bgPosition === 'header' ? "darkTitleForHeader" : "darkTitleForHeader"} variant="h4">{place}</Typography>
+              {/* <Typography component="h4" className={bgPosition === 'header' ? "darkTitleForHeader" : "darkTitleForHeader"} variant="h4">{place}</Typography> */}
+              <Typography
+  component="h4"
+  className={
+    bgPosition === 'header'
+      ? "darkTitleForHeader"
+      : "darkTitleForHeader"
+  }
+  variant="h4"
+>
+
+  {
+
+  history.location.pathname.includes(
+    "/consultation-details/"
+  )
+
+  ? "Consultation Details"
+
+  : history.location.pathname.includes(
+      "/consult/"
+    )
+
+    ? "Consult"
+
+    : place
+
+}
+
+</Typography>
               <BreadCrumb separator=" / " theme={bgPosition === 'header' ? 'dark' : 'light'} location={history.location} />
             </div>
           )}
