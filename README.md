@@ -53,7 +53,7 @@ A modern online prescription and consultation platform built using React.js and 
 ## Clone Repository
 
 ```bash
-git clone <FRONTEND_REPOSITORY_URL>
+git clone https://github.com/DevanshYadav9323/dsy-mern-prescription-frontend.git
 ```
 
 ---
