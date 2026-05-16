@@ -92,14 +92,14 @@ const useStyles = makeStyles()((theme, _params, classes) => ({
     // Make the items inside not wrap when transitioning:
     height: '100%',
     position: 'fixed',
-    backgroundColor: theme.palette.mode === 'dark' ? alpha(theme.palette.background.paper, 0.75) : alpha(theme.palette.background.paper, 0.9),
+    backgroundColor: theme.palette.mode === 'dark' ? alpha(theme.palette.background.paper, 0.75) : alpha(theme.palette.background.paper, 0.5),
     boxShadow: theme.shade.light,
-    backdropFilter: 'saturate(180%) blur(20px)'
+    backdropFilter: 'saturate(180%) blur(5px)'
   },
   drawerInnerMobile: {
     // Make the items inside not wrap when transitioning:
     height: '100%',
-    backgroundColor: theme.palette.mode === 'dark' ? alpha(theme.palette.background.paper, 0.75) : alpha(theme.palette.background.paper, 0.95),
+    backgroundColor: theme.palette.mode === 'dark' ? alpha(theme.palette.background.paper, 0.75) : alpha(theme.palette.background.paper, 0.5),
   },
   drawerHeader: {
     padding: '0',

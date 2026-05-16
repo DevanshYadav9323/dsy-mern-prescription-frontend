@@ -10,7 +10,7 @@ import dummy from 'dan-api/dummy/dummyContents';
 import logo from 'dan-images/logo.svg';
 import MainMenu from './MainMenu';
 import useStyles from './sidebar-jss';
-import textLogo from '../../../public/images/logo/logoText.png'
+import textLogo from '../../../public/images/logo/dsy_logo.png'
 import { Divider } from '@mui/material';
 
 function SidebarContent(props) {

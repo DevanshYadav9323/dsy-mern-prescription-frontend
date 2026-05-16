@@ -814,7 +814,7 @@ import AppConfig
 from "../../App/constants/config";
 
 import img
-from "../../../../public/images/logo/logo.png";
+from "../../../../public/images/logo/dsy_logo.png";
 
 import {
   toast
@@ -1041,6 +1041,24 @@ function PatientSignup() {
 
         }}
 
+
+//         style={{
+
+//                     background:
+//             "linear-gradient(135deg,#00695C,#26A69A)",
+
+//   display: "flex",
+
+//   alignItems: "center",
+
+//   justifyContent: "center",
+
+//   padding: "40px 20px",
+
+//   flex: 1
+
+// }}
+
       >
 
         {/* LEFT SIDE */}
@@ -1097,7 +1115,7 @@ function PatientSignup() {
 
                   width: 240,
 
-                  height: 240,
+                  // height: 240,
 
                   objectFit: "contain"
 

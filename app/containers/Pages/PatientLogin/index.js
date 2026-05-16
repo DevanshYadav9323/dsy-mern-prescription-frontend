@@ -334,7 +334,7 @@ import AppConfig
 from "../../App/constants/config";
 
 import img
-from "../../../../public/images/logo/logo.png";
+from "../../../../public/images/logo/dsy_logo.png";
 
 import {
   toast

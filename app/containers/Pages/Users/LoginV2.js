@@ -22,7 +22,7 @@ import { useHistory } from "react-router";
 
 import AppConfig from "../../App/constants/config";
 
-import img from "../../../../public/images/logo/logo.png";
+import img from "../../../../public/images/logo/dsy_logo.png";
 
 import { toast } from "react-toastify";
 
